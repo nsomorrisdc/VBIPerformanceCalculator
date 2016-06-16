@@ -116,9 +116,9 @@
             </FXCollections>
         </items>
       </ComboBox>
-      <ImageView fx:id="filterselectImageView" fitHeight="197.0" fitWidth="237.0" layoutX="227.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="filterselectImageView" fitHeight="197.0" fitWidth="237.0" layoutX="252.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/alanfriedman_sun_halpha.jpg" />
+            <Image backgroundLoading="true" url="@/img/alanfriedman_sun_halpha.jpg" />
          </image>
       </ImageView>
     </children>

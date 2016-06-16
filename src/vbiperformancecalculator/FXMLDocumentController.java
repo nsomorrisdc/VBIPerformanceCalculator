@@ -12,8 +12,13 @@
 
 package vbiperformancecalculator;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.image.Image;
@@ -30,6 +35,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.application.Application;
+import javafx.embed.swing.SwingFXUtils;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.layout.HBox;
+import javax.imageio.ImageIO;
 
 /**
  * VBI Performance Calculator
@@ -118,12 +128,16 @@ public class FXMLDocumentController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        layoutSetup();
+        try {
+            layoutSetup();
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }
     
     //Organize Radio button setup
-    private void layoutSetup() {
+    private void layoutSetup() throws IOException {
         //Create Camera Field, Speckle, Synchronization radio groups
         groupField = new ToggleGroup();
         groupSpeckle = new ToggleGroup();
@@ -199,12 +213,15 @@ public class FXMLDocumentController implements Initializable {
     
     //Handle ComboBox event
     public void updateCombo() {
-        
+     
         String selectedCombo = filterselectBox.getSelectionModel().getSelectedItem();
         if (selectedCombo.equals("Red - H Alpha 656.3 nm")) {
-            Image halphaImage = new Image("file:@../../images/alanfriedman_sun_halpha.jpg");
+            
+            Image halphaImage = new Image("/img/alanfriedman_sun_halpha.jpg");
             filterselectImageView.setImage(halphaImage);
             
+            //halphaImage = new Image("file:src/images/alanfriedman_sun_halpha.jpg");
+            //filterselectImageView.setImage(halphaImage);
             
             /*
             switch(selectedCombo) {
@@ -214,7 +231,7 @@ public class FXMLDocumentController implements Initializable {
             */
         }
         else if(selectedCombo.equals("Blue - Ca II K 393.3 nm")) {
-            Image caiikImage = new Image("file:@../../images/Sun-6May-2013.jpg");
+            Image caiikImage = new Image("/img/Sun-6May-2013.jpg");
             filterselectImageView.setImage(caiikImage);
         }
         System.out.println(selectedCombo);
