@@ -34,7 +34,7 @@ public class VBIPerformanceCalculator extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        //Load FXML, commented out for radiobutton testing
+        
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
         //Create the Scene
@@ -47,6 +47,8 @@ public class VBIPerformanceCalculator extends Application {
         //Display the stage
         stage.show();
     }
+
+    
 
     
     
