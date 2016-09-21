@@ -49,7 +49,10 @@ public class VBIPerformanceCalculator extends Application {
     }
 
     
+<<<<<<< HEAD
 
     
+=======
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
     
 }

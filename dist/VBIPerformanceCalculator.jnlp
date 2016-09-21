@@ -8,7 +8,11 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+<<<<<<< HEAD
     <jar href="VBIPerformanceCalculator.jar" size="23042289" download="eager" />
+=======
+    <jar href="VBIPerformanceCalculator.jar" size="361717" download="eager" />
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="VBIPerformanceCalculator" >
     <param name="requiredFXVersion" value="8.0+"/>

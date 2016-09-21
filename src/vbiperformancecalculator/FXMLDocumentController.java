@@ -14,6 +14,7 @@ package vbiperformancecalculator;
 
 import java.io.File;
 import java.io.IOException;
+<<<<<<< HEAD
 import static java.lang.Math.ceil;
 import static java.lang.Math.floor;
 import static java.lang.Math.round;
@@ -27,6 +28,13 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.animation.TranslateTransition;
+=======
+import java.net.URL;
+import java.util.HashMap;
+import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.image.Image;
@@ -46,8 +54,13 @@ import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Tooltip;
+<<<<<<< HEAD
 import javafx.scene.control.TreeView;
 import javafx.scene.control.TreeCell;
+=======
+import javafx.scene.control.TreeCell;
+import javafx.scene.control.TreeView;
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
@@ -55,6 +68,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.LineBuilder;
 import javafx.scene.shape.Rectangle;
+<<<<<<< HEAD
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.SelectionMode;
@@ -67,6 +81,15 @@ import javafx.util.Duration;
 
 
 
+=======
+import javafx.beans.binding.BooleanBinding;
+import javafx.scene.canvas.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TreeItem;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
 
 
 /**
@@ -76,6 +99,7 @@ import javafx.util.Duration;
  */
 public class FXMLDocumentController implements Initializable {
     
+<<<<<<< HEAD
     int redcount = 0;
     int bluecount = 0;
     
@@ -87,6 +111,16 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private AnchorPane navList;
+=======
+    @FXML
+    private TreeView channeltreeView;
+    
+    @FXML
+    private Label infoDSPTextBox;
+    
+    @FXML
+    private Button viewdetailsButton;
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
     
     @FXML
     private HBox redchannelTimeline;
@@ -128,6 +162,7 @@ public class FXMLDocumentController implements Initializable {
     private RadioButton fullfieldRadio;
     
     @FXML
+<<<<<<< HEAD
     private ImageView filterselectImageView;
     
     @FXML
@@ -135,12 +170,22 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private Pane reticlePane;
+=======
+    private Button combineButton;
+    
+    @FXML
+    private ImageView filterselectImageView;
+    
+    @FXML
+    private Pane imagePane;
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
     
     @FXML
     private Pane profilePane;
     
     @FXML
     private ImageView profileImageView;
+<<<<<<< HEAD
     
     @FXML
     private TreeView<Object> redchanneltreeView;
@@ -466,10 +511,27 @@ public class FXMLDocumentController implements Initializable {
         System.out.println(redsaveselectedNode + " post loop saved");
         redpasteButton.setDisable(false);
         redcutButton.setDisable(true);
+=======
+
+    @FXML
+    private void handlecommittreeButtonAction(ActionEvent event) {
+        //TODO add functionality to save to tree, do not save to file until menu "Save" is selected
+        
+            System.out.println("Committed to Tree");
+            addNode();
+            updateTimeline();
+            
+    }
+    
+    @FXML
+    private void combineButtonAction(ActionEvent event) {
+        System.out.println("Combining Subgroup");
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         
     }
     
     @FXML
+<<<<<<< HEAD
     private void redpasteButtonAction(ActionEvent event) {
         //System.out.println(redsaveselectedNode +" Saved nodes from member variable");
         ArrayList<TreeItem<Object>> saveselectedItems = redsaveselectedNode;
@@ -675,12 +737,40 @@ public class FXMLDocumentController implements Initializable {
     private void bluecombineButtonAction(ActionEvent event) {
         bluegroupFilter();
     }
+=======
+    public void recordFieldGroupAction(ActionEvent event) {
+        //probably not going to be void will need to know which radio button is selected
+      
+    }
+    
+    @FXML
+    public void speckleSelectionAction(ActionEvent event) {
+        
+    }
+    
+    @FXML
+    public void fieldSelectionAction(ActionEvent event) {
+        //probably not going to be void will need to know which radio button is selected
+    }
+    
+    @FXML
+    public void synchronizationSelectionAction(ActionEvent event) {
+        //probably not going to be void will need to know which radio button is selected
+    }
+    
+    private ToggleGroup groupField;
+    private ToggleGroup groupSpeckle;
+    private ToggleGroup groupSynch;
+    private int count;
+    
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
         try {
             layoutSetup();
+<<<<<<< HEAD
         } 
         catch (IOException ex) {
             Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
@@ -698,11 +788,23 @@ public class FXMLDocumentController implements Initializable {
         redchanneltreeView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         bluechanneltreeView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         
+=======
+            
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        count = 1;
+    }
+    
+    //Organize Radio button setup
+    public void layoutSetup() throws IOException {
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         //Create Camera Field, Speckle, Synchronization radio groups
         groupField = new ToggleGroup();
         groupSpeckle = new ToggleGroup();
         groupSynch = new ToggleGroup();
         
+<<<<<<< HEAD
         //Icons designed by Stephen Hutchings from Flaticon
         redcombineButton.setStyle("-fx-background-image: url('/img/combineicon.png')");
         redremoveButton.setStyle("-fx-background-position: center; -fx-background-image: url('/img/delete-button.png')");
@@ -725,10 +827,19 @@ public class FXMLDocumentController implements Initializable {
         redchannelTimeline.setPrefWidth(680);
         bluechannelTimeline.setPrefWidth(680);
         
+=======
+        //Set the group that both Field radio buttons will be in 
+        fullfieldRadio.setToggleGroup(groupField);
+        centerfieldRadio.setToggleGroup(groupField);
+        //Set the group that both Speckle radio buttons will be in
+        onspeckleRadio.setToggleGroup(groupSpeckle);
+        offspeckleRadio.setToggleGroup(groupSpeckle);
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         //Set the group that both Synchronization radio buttons will be in
         loosesynchRadio.setToggleGroup(groupSynch);
         fixedsynchRadio.setToggleGroup(groupSynch);
         nonesynchRadio.setToggleGroup(groupSynch);
+<<<<<<< HEAD
         ObservableList<String> comboList = FXCollections.observableArrayList("Select Filter...","Red - H Alpha 656.3 nm","Red - Continuum 668.4 nm","Red - TiO 705.4 nm","Red - Fe XI 789.0 nm",
                 "Blue - Ca II K 393.3 nm","Blue - G Band 430.5 nm","Blue - Continuum 450.4 nm","Blue - H Beta 486.4 nm"); 
         filterselectBox.setItems(comboList);
@@ -743,10 +854,25 @@ public class FXMLDocumentController implements Initializable {
         //Set filter selection
         filterselectBox.setValue(comboList.get(0));
         
+=======
+        ObservableList<String> comboList = FXCollections.observableArrayList("Red - H Alpha 656.3 nm","Red - Red Continuum 668.4 nm","Red - TiO 705.4 nm","Red - Fe XI 789.0 nm",
+                "Blue - Ca II K 393.3 nm","Blue - G Band 430.5 nm","Blue - Blue Continuum 450.4 nm","Blue - H Beta 486.4 nm"); 
+        filterselectBox.setItems(comboList);
+        //Set initial selected buttons
+        currentselectedDSP = new infoDSP();
+        
+        groupField.selectToggle(currentselectedDSP.fieldSample == 0 ? fullfieldRadio : centerfieldRadio);
+        groupSpeckle.selectToggle(currentselectedDSP.speckleSelect == true ? onspeckleRadio : offspeckleRadio);
+        //Does not work 100% yet below need to have option for fixed, loose and none***
+        groupSynch.selectToggle(currentselectedDSP.synchronizationSelect == "Fixed" ? fixedsynchRadio : loosesynchRadio);
+        //Set filter selection
+        filterselectBox.setValue(comboList.get(0));
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         //Add event listener
         groupField.selectedToggleProperty().addListener(event -> updateField());
         groupSpeckle.selectedToggleProperty().addListener(event -> updateSpeckle());
         groupSynch.selectedToggleProperty().addListener(event -> updateSynch());
+<<<<<<< HEAD
         
         //Add event Listener for Combo
         filterselectBox.getSelectionModel().selectedIndexProperty().addListener(event -> updateCombo());
@@ -765,11 +891,17 @@ public class FXMLDocumentController implements Initializable {
         dspGroupEditor.setCollapsible(false);
         dspEditor.setCollapsible(false);
         
+=======
+        //Add event Listener for Combo
+        filterselectBox.getSelectionModel().selectedIndexProperty().addListener(event -> updateCombo());
+        
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         //Control onAction events for radios and combobox
         updateField();
         updateSpeckle();
         updateSynch();
         updateCombo();
+<<<<<<< HEAD
         specklechangeListener();
         cyclechangeListener();
         rootcyclechangeListener();
@@ -974,6 +1106,16 @@ public class FXMLDocumentController implements Initializable {
     public void updateSynch() {
        
         //String synchselectedToggle = groupSynch.getSelectedToggle().toString();
+=======
+        //setTextBox();
+    
+    }
+    //Functions used to save the information from RadioButtons
+    //Synchronization
+    public String updateSynch() {
+       
+        String synchselectedToggle = groupSynch.getSelectedToggle().toString();
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         
         //System.out.println(groupSynch.getSelectedToggle().toString());
         if(loosesynchRadio.isSelected()) {
@@ -988,6 +1130,7 @@ public class FXMLDocumentController implements Initializable {
             System.out.println("No Synchronization Selected");
             currentselectedDSP.setSynchronizationSelect("None");
         }
+<<<<<<< HEAD
         currentselectedDSP.alltoString();
         //return synchselectedToggle;
     }
@@ -1033,39 +1176,65 @@ public class FXMLDocumentController implements Initializable {
     public void updateSpeckle() {
        
         //String speckleselectedToggle = groupSpeckle.getSelectedToggle().toString();
+=======
+        currentselectedDSP.toString();
+        return synchselectedToggle;
+    }
+    //Speckle
+    public String updateSpeckle() {
+       
+        String speckleselectedToggle = groupSpeckle.getSelectedToggle().toString();
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         
         //Can change what the output of the selected radio button is with setUserData("Whatever you want");
         //System.out.println(groupSpeckle.getSelectedToggle().toString());
         if(onspeckleRadio.isSelected()) {
             System.out.println("Speckle ON");
             currentselectedDSP.setSpeckleSelect(true);
+<<<<<<< HEAD
             currentselectedDSP.setNumberFrames(80);
             framesinputField.setDisable(true);
             framesinputField.setText("");
+=======
+            framesinputField.setDisable(true);
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         }
         else {
             System.out.println("Speckle OFF");
             currentselectedDSP.setSpeckleSelect(false);
             framesinputField.setDisable(false);
             
+<<<<<<< HEAD
             //String framesInput = framesinputField.getText();
             //int numFrames = Integer.parseInt(framesInput);
             //currentselectedDSP.setNumberFrames(numFrames);
         }
         currentselectedDSP.alltoString();
         //return speckleselectedToggle;
+=======
+        }
+        currentselectedDSP.toString();
+        return speckleselectedToggle;
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
     }
     
     
     //Camera Field
+<<<<<<< HEAD
     public void updateField() {
         
         //String fieldselectedToggle = groupField.getSelectedToggle().toString();
+=======
+    public String updateField() {
+        
+        String fieldselectedToggle = groupField.getSelectedToggle().toString();
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         updateReticle();
         
         //System.out.println(groupField.getSelectedToggle().toString());
         if(fullfieldRadio.isSelected()) {
             System.out.println("Full Camera Field Selected");
+<<<<<<< HEAD
             currentselectedDSP.setNumberFields(9);
         }
         else {
@@ -1074,11 +1243,23 @@ public class FXMLDocumentController implements Initializable {
         }
         currentselectedDSP.alltoString();
         //return fieldselectedToggle;
+=======
+            currentselectedDSP.setFieldSample(0);
+            
+        }
+        else {
+            System.out.println("Center Camera Field Selected");
+            currentselectedDSP.setFieldSample(1);
+        }
+        currentselectedDSP.toString();
+        return fieldselectedToggle;
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
     }
     
     //Overlay reticle on main image
     public void updateReticle() {
         
+<<<<<<< HEAD
         reticlePane.getChildren().clear();
         
         //Scene goes from: Y: 185 to 0, X: 15 to 198
@@ -1108,10 +1289,48 @@ public class FXMLDocumentController implements Initializable {
             reticlePane.getChildren().addAll(vleftLine,vrightLine,htopLine,hbotLine,centerRect);
         }
         
+=======
+        //Scene goes from: Y: 195 to 5, X: 23 to 213
+        //Group reticleGroup = new Group();
+        Line vleftLine = LineBuilder.create().startX(85).startY(195).endX(85).endY(5).fill(Color.BLUE).strokeWidth(2.0).build();
+        Line vrightLine = LineBuilder.create().startX(150).startY(195).endX(150).endY(5).fill(Color.RED).strokeWidth(2.0).build();
+        Line htopLine = LineBuilder.create().startX(23).startY(65).endX(213).endY(65).fill(Color.BLUEVIOLET).strokeWidth(2.0).build();
+        Line hbotLine = LineBuilder.create().startX(23).startY(130).endX(213).endY(130).fill(Color.CHARTREUSE).strokeWidth(2.0).build();
+        Rectangle centerRect = new Rectangle();
+        centerRect.setX(87);
+        centerRect.setY(67);
+        centerRect.setWidth(61);
+        centerRect.setHeight(61);
+        centerRect.setFill(Color.BROWN);
+        centerRect.setOpacity(.20);
+        Rectangle fullRect = new Rectangle();
+        fullRect.setX(23);
+        fullRect.setY(5);
+        fullRect.setWidth(190);
+        fullRect.setHeight(190);
+        fullRect.setFill(Color.TEAL);
+        fullRect.setOpacity(.20);
+        //reticleGroup.getChildren().addAll(vleftLine,vrightLine,htopLine,hbotLine);
+        
+        if(fullfieldRadio.isSelected()) {
+            //centerRect.setVisible(false);
+            //imagePane.getChildren().removeAll();
+            imagePane.getChildren().addAll(vleftLine,vrightLine,htopLine,hbotLine,fullRect);
+            
+        }
+        else {
+            //fullRect.setVisible(false);
+            //imagePane.getChildren().removeAll();
+            imagePane.getChildren().addAll(vleftLine,vrightLine,htopLine,hbotLine,centerRect);
+        }
+        
+        
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
     }
     
     //Handle ComboBox event
     public String updateCombo() {
+<<<<<<< HEAD
     
         String selectedCombo = filterselectBox.getSelectionModel().getSelectedItem();
         currentselectedDSP.setFilterSelect(selectedCombo);
@@ -1181,16 +1400,50 @@ public class FXMLDocumentController implements Initializable {
                 profileImageView.setImage(null);
                 break;
                 
+=======
+        
+     
+        String selectedCombo = filterselectBox.getSelectionModel().getSelectedItem();
+        currentselectedDSP.setFilterSelect(selectedCombo);
+        
+        
+        //Change filter image based on combobox selection
+        switch (selectedCombo) {
+            case "Red - H Alpha 656.3 nm":
+                
+                Image halphaImage = new Image("/img/alanfriedman_sun_halpha.jpg");
+                filterselectImageView.setImage(halphaImage);
+               
+                
+                break;
+            case "Blue - Ca II K 393.3 nm":
+                Image caiikImage = new Image("/img/Sun-6May-2013.jpg");
+                filterselectImageView.setImage(caiikImage);
+               
+                break;
+        
+            case "Blue - G Band 430.5 nm":
+                
+                break;
+            case "Blue - Blue Continuum 450.4 nm":
+                
+                break;
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
             default:
                 break;
         }
         System.out.println(selectedCombo);
+<<<<<<< HEAD
         currentselectedDSP.alltoString();
+=======
+        currentselectedDSP.toString();
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         return selectedCombo;
         
     }
     
     //Handle rectangle draw in timeline
+<<<<<<< HEAD
     public void updateTimeline(infoDSP DSP) {
         
         String filterSelect = DSP.filterSelect;
@@ -1496,6 +1749,85 @@ public class FXMLDocumentController implements Initializable {
     
     
   
+=======
+    public Rectangle updateTimeline() {
+      
+        String selectedCombo = filterselectBox.getSelectionModel().getSelectedItem();
+        
+        int x = 100;
+        int y = 100;
+        
+        switch (selectedCombo) {
+            //When Commit button selected create the rectangle in timeline
+            case "Red - H Alpha 656.3 nm":
+                {
+                    Rectangle rect1 = new Rectangle(x,y);
+                    //Set popup tooltip contents
+                    Tooltip t = new Tooltip("H Alpha 656.3 nm");
+                    Tooltip.install(rect1, t);
+                    rect1.setFill(Color.CORNFLOWERBLUE);
+                    Rectangle rect2 = new Rectangle(x/5,y);
+                    redchannelTimeline.getChildren().addAll(rect1, rect2);
+                    break;
+                }
+      
+            case "Red - Red Continuum 668.4 nm":
+                {
+                    Rectangle rect1 = new Rectangle(x/3,y);
+                    //Set popup tooltip contents
+                    Tooltip t = new Tooltip("Red Continuum 668.4 nm");
+                    Tooltip.install(rect1, t);
+                    rect1.setFill(Color.CORAL);
+                    Rectangle rect2 = new Rectangle(x/8,y);
+                    redchannelTimeline.getChildren().addAll(rect1, rect2);
+                    break;
+                }
+            case "Blue - Ca II K 393.3 nm":
+                {
+                    Rectangle rect1 = new Rectangle(x,y);
+                    //Set popup tooltip contents
+                    Tooltip t = new Tooltip("Ca II K 393.3 nm");
+                    Tooltip.install(rect1, t);
+                    rect1.setFill(Color.CADETBLUE);
+                    Rectangle rect2 = new Rectangle(x/5,y);
+                    bluechannelTimeline.getChildren().addAll(rect1, rect2);
+                    break;
+                }
+            default:
+                break;
+        }
+        //Will return which rectangle was created and assign it a value to save in file
+        Rectangle rect1 = null;
+        
+        return rect1;
+        
+    }
+    
+    private void addNode() {
+        String selectedCombo = filterselectBox.getSelectionModel().getSelectedItem();
+        TreeItem<String> parent = (TreeItem<String>) channeltreeView.getSelectionModel().getSelectedItem();
+        
+        if (parent==null) {
+            parent = channeltreeView.getRoot();
+        }
+        parent.setExpanded(true);
+        //Add section where check if selectedCombo is already present within tree, if so add count to child's name in tree and increment count
+        count++;
+        final TreeItem<String> newNode = new TreeItem<>(selectedCombo+" "+count);
+        parent.getChildren().add(newNode);
+        
+        channeltreeView.getSelectionModel().select(parent);
+        
+    }
+    /*
+    public void setTextBox(String myString) {
+        infoDSPTextBox.setText(myString);
+        infoDSPTextBox.setWrapText(true);
+        
+    }
+    */
+    
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
     public void loadFile() {
         
     }
@@ -1504,6 +1836,7 @@ public class FXMLDocumentController implements Initializable {
         
     }
     
+<<<<<<< HEAD
     //Class which holds all data contained within a DSP, filter selection and selected options
     public class infoDSP {
         private int ROI;
@@ -1545,12 +1878,36 @@ public class FXMLDocumentController implements Initializable {
             //System.out.println(numberFields);
             //System.out.println(duration);
             return duration;
+=======
+    public class infoDSP {
+        private int ROI;
+        private int exposureTime;
+        private int exposureRate;
+        private int Binning;
+        private int fieldSample;
+        private String filterSelect;
+        private String synchronizationSelect;
+        private boolean speckleSelect;
+        
+        public infoDSP() {
+            //Default configuration upon load of application
+             ROI = 1;
+             exposureTime = 20;
+             exposureRate = 2;
+             Binning = 2;
+             fieldSample = 0;
+             filterSelect = "Red - H Alpha 656.3 nm";
+             synchronizationSelect = "Fixed";
+             speckleSelect = true;
+             toString();
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         }
         
         @Override
         public String toString() {
             
             String myString = new String();
+<<<<<<< HEAD
             myString = getFilterSelect();
             char firstSelect = myString.charAt(0);
             if (myString != null) {
@@ -1583,12 +1940,21 @@ public class FXMLDocumentController implements Initializable {
                     + "\nSpeckle Selection: " + isSpeckleSelect(); //+ "\nTotal Time: " + Math.max(calcscaleTimelineRecursive(redchanneltreeView.getRoot().getChildren()),calcscaleTimelineRecursive(bluechanneltreeView.getRoot().getChildren()));
             
             //infoDSPTextBox.setText(myString);
+=======
+            //Can we abstract this up into the UI setup class above?
+            myString = "ROI: "+ ROI + ", Total Exposure Time: " + exposureTime + ", Exposure Rate: "+ exposureRate + ", Binning: " + Binning
+                    + ", Camera Field: " + fieldSample + ", Filter Selection: " + filterSelect + ", Synchronization Mode: " + synchronizationSelect
+                    + ", Speckle Selection: " + speckleSelect;
+            //myString.textProperty().bind(filterSelect);
+            infoDSPTextBox.setText(myString);
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
             infoDSPTextBox.setWrapText(true);
             return myString;
             
         }
         
         //Set filter combobox selection to specific image file
+<<<<<<< HEAD
         //public HashMap setfilterImage(String filterSelect) {
         //    HashMap<String, String> filterimageMap = new HashMap();
             //filterimageMap.put("Red - H Alpha 656.3 nm","/img/alanfriedman_sun_halpha.jpg");
@@ -1596,6 +1962,15 @@ public class FXMLDocumentController implements Initializable {
              
         //    return filterimageMap;
         //}
+=======
+        public HashMap setfilterImage(String filterSelect, String mainImage) {
+            HashMap<String, String> filterimageMap = new HashMap();
+            filterimageMap.put("Red - H Alpha 656.3 nm","/img/alanfriedman_sun_halpha.jpg");
+            
+            
+            return filterimageMap;
+        }
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
 
         /**
          * @return the ROI
@@ -1614,11 +1989,25 @@ public class FXMLDocumentController implements Initializable {
         /**
          * @return the exposureTime
          */
+<<<<<<< HEAD
         public double getExposureTime() {
+=======
+        public int getExposureTime() {
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
             return exposureTime;
         }
 
         /**
+<<<<<<< HEAD
+=======
+         * @param exposureTime the exposureTime to set
+         */
+        public void setExposureTime(int exposureTime) {
+            this.exposureTime = exposureTime;
+        }
+
+        /**
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
          * @return the exposureRate
          */
         public int getExposureRate() {
@@ -1666,9 +2055,18 @@ public class FXMLDocumentController implements Initializable {
         public String getFilterSelect() {
             return filterSelect;
         }
+<<<<<<< HEAD
         
         public void setFilterSelect(String selectedFilter) {
             this.filterSelect = selectedFilter;
+=======
+
+        /**
+         * @param filterSelect the filterSelect to set
+         */
+        public void setFilterSelect(String filterSelect) {
+            this.filterSelect = filterSelect;
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         }
 
         /**
@@ -1698,6 +2096,7 @@ public class FXMLDocumentController implements Initializable {
         public void setSpeckleSelect(boolean speckleSelect) {
             this.speckleSelect = speckleSelect;
         }
+<<<<<<< HEAD
 
         /**
          * @return the numberFrames
@@ -1768,12 +2167,19 @@ public class FXMLDocumentController implements Initializable {
         public void setNumCycles(int numCycles) {
             this.numCycles = numCycles;
         }  
+=======
+        
+        
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         
     }
     
     private infoDSP currentselectedDSP;
+<<<<<<< HEAD
     //private infoDSP treeitemnameinfoDSP;
     //private groupInfo currentselectedGroupInfo;
+=======
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
     
 }
 

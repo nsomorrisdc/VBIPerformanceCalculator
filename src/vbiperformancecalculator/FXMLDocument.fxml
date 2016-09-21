@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <?import javafx.geometry.*?>
+=======
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
 <?import javafx.scene.canvas.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
@@ -12,12 +15,21 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<<<<<<< HEAD
 <AnchorPane id="AnchorPane" prefHeight="854.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vbiperformancecalculator.FXMLDocumentController">
     <children>
         <Button fx:id="committreeButton" layoutX="471.0" layoutY="292.0" onAction="#handlecommittreeButtonAction" prefHeight="45.0" prefWidth="64.0" text="---&gt;" />
       <TreeView fx:id="redchanneltreeView" layoutX="561.0" layoutY="35.0" prefHeight="279.0" prefWidth="235.0" AnchorPane.leftAnchor="561.0">
         <root>
             <TreeItem value="Red" />
+=======
+<AnchorPane id="AnchorPane" prefHeight="935.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vbiperformancecalculator.FXMLDocumentController">
+    <children>
+        <Button fx:id="committreeButton" layoutX="496.0" layoutY="205.0" onAction="#handlecommittreeButtonAction" text="--&gt;" />
+      <TreeView fx:id="channeltreeView" layoutX="548.0" layoutY="76.0" prefHeight="279.0" prefWidth="137.0">
+        <root>
+            <TreeItem value="Red Channel" />
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         </root>
       </TreeView>
       <Label layoutX="50.0" layoutY="167.0" text="Field Selection">
@@ -35,7 +47,11 @@
             <Font name="System Bold" size="13.0" />
       </font>
       </Label>
+<<<<<<< HEAD
       <MenuBar prefHeight="29.0" prefWidth="1002.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+=======
+      <MenuBar>
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -62,7 +78,11 @@
           </Menu>
         </menus>
       </MenuBar>
+<<<<<<< HEAD
       <Label layoutX="310.0" layoutY="564.0" text="Synchronization Mode">
+=======
+      <Label layoutX="266.0" layoutY="479.0" text="Synchronization Mode">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
           <font>
             <Font name="System Bold" size="13.0" />
           </font>
@@ -77,7 +97,11 @@
             <RadioButton fx:id="centerfieldRadio" mnemonicParsing="false" onAction="#fieldSelectionAction" text="Center" toggleGroup="$groupField" />
          </children>
       </VBox>
+<<<<<<< HEAD
       <VBox layoutX="49.0" layoutY="283.0" prefHeight="136.0" prefWidth="114.0" spacing="10.0">
+=======
+      <VBox layoutX="49.0" layoutY="283.0" prefHeight="136.0" prefWidth="113.0" spacing="10.0">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
          <children>
             <RadioButton fx:id="onspeckleRadio" mnemonicParsing="false" onAction="#speckleSelectionAction" selected="true" text="On">
                <toggleGroup>
@@ -85,6 +109,7 @@
                </toggleGroup>
             </RadioButton>
             <RadioButton fx:id="offspeckleRadio" mnemonicParsing="false" onAction="#speckleSelectionAction" text="Off" toggleGroup="$groupSpeckle" />
+<<<<<<< HEAD
             <TextField fx:id="framesinputField" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="26.0" prefWidth="46.0" />
             <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="132.0" text="Number of frames" />
             <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="122.0" text="[1-10]" textAlignment="CENTER" VBox.vgrow="NEVER">
@@ -106,32 +131,75 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="69.0">
                <children>
                   <HBox fx:id="bluechannelTimeline" layoutY="1.0" prefHeight="88.0" AnchorPane.bottomAnchor="-20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0" />
+=======
+            <TextField fx:id="framesinputField" prefHeight="26.0" prefWidth="37.0" />
+            <Label text="Number of Frames" />
+         </children>
+      </VBox>
+      <Button fx:id="combineButton" layoutX="550.0" layoutY="364.0" mnemonicParsing="false" onAction="#combineButtonAction" text="Combine Subgroup" />
+      <ComboBox fx:id="filterselectBox" layoutX="26.0" layoutY="120.0" prefHeight="26.0" prefWidth="141.0">
+        
+      </ComboBox>
+      <SplitPane dividerPositions="0.5" layoutX="70.0" layoutY="558.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="581.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox fx:id="redchannelTimeline" prefHeight="56.0" prefWidth="586.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox fx:id="bluechannelTimeline" layoutY="1.0" prefHeight="88.0" prefWidth="588.0" />
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
                </children>
             </AnchorPane>
         </items>
       </SplitPane>
+<<<<<<< HEAD
       <Label layoutX="78.0" layoutY="674.0" text="Red">
+=======
+      <Label layoutX="21.0" layoutY="582.0" text="Red">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Label layoutX="78.0" layoutY="747.0" text="Blue">
+=======
+      <Label layoutX="19.0" layoutY="659.0" text="Blue">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Label layoutX="482.0" layoutY="810.0" text="Time">
+=======
+      <Label layoutX="339.0" layoutY="721.0" text="Time">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
       <Pane fx:id="imagePane" layoutX="226.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0">
          <children>
+<<<<<<< HEAD
             <ImageView fx:id="filterselectImageView" fitHeight="200.0" fitWidth="186.0" layoutX="14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
             <Pane fx:id="reticlePane" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </Pane>
       <HBox layoutX="287.0" layoutY="599.0" prefHeight="23.0" prefWidth="235.0">
+=======
+            <ImageView fx:id="filterselectImageView" fitHeight="200.0" fitWidth="186.0" layoutX="14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image backgroundLoading="true" url="@/img/alanfriedman_sun_halpha.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <HBox layoutX="226.0" layoutY="505.0" prefHeight="23.0" prefWidth="235.0">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
          <children>
             <RadioButton fx:id="fixedsynchRadio" mnemonicParsing="false" onAction="#synchronizationSelectionAction" selected="true" text="Fixed      ">
                <toggleGroup>
@@ -142,6 +210,7 @@
             <RadioButton fx:id="nonesynchRadio" mnemonicParsing="false" onAction="#synchronizationSelectionAction" text="None" toggleGroup="$groupSynch" />
          </children>
       </HBox>
+<<<<<<< HEAD
       <Pane fx:id="profilePane" layoutX="216.0" layoutY="311.0" prefHeight="188.0" prefWidth="228.0">
          <children>
             <ImageView fx:id="profileImageView" fitHeight="193.0" fitWidth="235.0" layoutX="-3.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
@@ -310,5 +379,19 @@
          </children>
       </GridPane>
       <Line endX="100.0" layoutX="956.0" layoutY="731.0" startX="-100.0" />
+=======
+      <Line endX="100.0" layoutX="335.0" layoutY="466.0" startX="-100.0" />
+      <Button fx:id="viewdetailsButton" layoutX="550.0" layoutY="393.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" text="View Details" />
+      <Pane fx:id="profilePane" layoutX="244.0" layoutY="299.0" prefHeight="156.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="profileImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image backgroundLoading="true" url="@/img/halpha-neckel.jpg" />
+                </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="infoDSPTextBox" layoutX="217.0" layoutY="778.0" prefHeight="111.0" prefWidth="287.0" text="Label" />
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
     </children>
 </AnchorPane>

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <?import javafx.geometry.*?>
 <?import javafx.scene.canvas.*?>
+=======
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.shape.*?>
@@ -12,6 +15,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<<<<<<< HEAD
 <AnchorPane id="AnchorPane" prefHeight="854.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vbiperformancecalculator.FXMLDocumentController">
     <children>
         <Button fx:id="committreeButton" layoutX="471.0" layoutY="292.0" onAction="#handlecommittreeButtonAction" prefHeight="45.0" prefWidth="64.0" text="---&gt;" />
@@ -21,21 +25,45 @@
         </root>
       </TreeView>
       <Label layoutX="50.0" layoutY="167.0" text="Field Selection">
+=======
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vbiperformancecalculator.FXMLDocumentController">
+    <children>
+        <Button fx:id="committreeButton" layoutX="497.0" layoutY="390.0" onAction="#handlecommittreeButtonAction" text="--&gt;" />
+      <TreeView layoutX="549.0" layoutY="261.0" prefHeight="279.0" prefWidth="137.0" />
+      <Label layoutX="178.0" layoutY="85.0" text="VBI Instrument Performance Calculator" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="289.0" text="Field Selection">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
           <font>
             <Font name="System Bold" size="13.0" />
           </font>
       </Label>
+<<<<<<< HEAD
       <Label layoutX="50.0" layoutY="95.0" text="Filter Selection">
+=======
+      <Label layoutX="49.0" layoutY="188.0" text="Filter Selection">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Label layoutX="34.0" layoutY="257.0" text="Speckle Correction">
+=======
+      <Label layoutX="34.0" layoutY="400.0" text="Speckle Correction">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
       <font>
             <Font name="System Bold" size="13.0" />
       </font>
       </Label>
+<<<<<<< HEAD
       <MenuBar prefHeight="29.0" prefWidth="1002.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+=======
+      <MenuBar>
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -62,12 +90,22 @@
           </Menu>
         </menus>
       </MenuBar>
+<<<<<<< HEAD
       <Label layoutX="310.0" layoutY="564.0" text="Synchronization Mode">
+=======
+      <Line endX="100.0" layoutX="350.0" layoutY="136.0" startX="-100.0" />
+      <Label layoutX="26.0" layoutY="554.0" text="Synchronization Mode">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
           <font>
             <Font name="System Bold" size="13.0" />
           </font>
       </Label>
+<<<<<<< HEAD
       <VBox alignment="CENTER_LEFT" layoutX="54.0" layoutY="175.0" prefHeight="82.0" prefWidth="85.0" spacing="10.0">
+=======
+      <Separator layoutX="551.0" layoutY="402.0" prefHeight="1.0" prefWidth="133.0" />
+      <VBox alignment="CENTER_LEFT" layoutX="53.0" layoutY="302.0" prefHeight="82.0" prefWidth="85.0" spacing="10.0">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
          <children>
             <RadioButton fx:id="fullfieldRadio" mnemonicParsing="false" onAction="#fieldSelectionAction" selected="true" text="Full">
                <toggleGroup>
@@ -77,7 +115,11 @@
             <RadioButton fx:id="centerfieldRadio" mnemonicParsing="false" onAction="#fieldSelectionAction" text="Center" toggleGroup="$groupField" />
          </children>
       </VBox>
+<<<<<<< HEAD
       <VBox layoutX="49.0" layoutY="283.0" prefHeight="136.0" prefWidth="114.0" spacing="10.0">
+=======
+      <VBox layoutX="49.0" layoutY="426.0" prefHeight="136.0" prefWidth="113.0" spacing="10.0">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
          <children>
             <RadioButton fx:id="onspeckleRadio" mnemonicParsing="false" onAction="#speckleSelectionAction" selected="true" text="On">
                <toggleGroup>
@@ -85,6 +127,7 @@
                </toggleGroup>
             </RadioButton>
             <RadioButton fx:id="offspeckleRadio" mnemonicParsing="false" onAction="#speckleSelectionAction" text="Off" toggleGroup="$groupSpeckle" />
+<<<<<<< HEAD
             <TextField fx:id="framesinputField" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="26.0" prefWidth="46.0" />
             <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="132.0" text="Number of frames" />
             <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="122.0" text="[1-10]" textAlignment="CENTER" VBox.vgrow="NEVER">
@@ -134,10 +177,20 @@
       <HBox layoutX="287.0" layoutY="599.0" prefHeight="23.0" prefWidth="235.0">
          <children>
             <RadioButton fx:id="fixedsynchRadio" mnemonicParsing="false" onAction="#synchronizationSelectionAction" selected="true" text="Fixed      ">
+=======
+            <TextField fx:id="framesinputField" prefHeight="26.0" prefWidth="37.0" />
+            <Label text="Number of Frames" />
+         </children>
+      </VBox>
+      <VBox layoutX="45.0" layoutY="584.0" prefHeight="106.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <RadioButton fx:id="fixedsynchRadio" mnemonicParsing="false" onAction="#synchronizationSelectionAction" selected="true" text="Fixed">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
                <toggleGroup>
                   <ToggleGroup fx:id="groupSynch" />
                </toggleGroup>
             </RadioButton>
+<<<<<<< HEAD
             <RadioButton fx:id="loosesynchRadio" mnemonicParsing="false" onAction="#synchronizationSelectionAction" text="Loose      " toggleGroup="$groupSynch" />
             <RadioButton fx:id="nonesynchRadio" mnemonicParsing="false" onAction="#synchronizationSelectionAction" text="None" toggleGroup="$groupSynch" />
          </children>
@@ -310,5 +363,31 @@
          </children>
       </GridPane>
       <Line endX="100.0" layoutX="956.0" layoutY="731.0" startX="-100.0" />
+=======
+            <RadioButton fx:id="loosesynchRadio" mnemonicParsing="false" onAction="#synchronizationSelectionAction" text="Loose" toggleGroup="$groupSynch" />
+            <RadioButton fx:id="nonesynchRadio" mnemonicParsing="false" onAction="#synchronizationSelectionAction" text="None" toggleGroup="$groupSynch" />
+         </children>
+      </VBox>
+      <Button fx:id="combineButton" layoutX="551.0" layoutY="549.0" mnemonicParsing="false" onAction="#combineButtonAction" text="Combine Subgroup" />
+      <ComboBox fx:id="filterselectBox" layoutX="25.0" layoutY="221.0" prefHeight="26.0" prefWidth="141.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Red - H Alpha 656.3 nm" />
+                <String fx:value="Red - Red Continuum 668.4 nm" />
+                <String fx:value="Red - TiO 705.4 nm" />
+                <String fx:value="Red - Fe XI 789.0 nm" />
+                <String fx:value="Blue - Ca II K 393.3 nm" />
+                <String fx:value="Blue - G Band 430.5 nm" />
+                <String fx:value="Blue - Blue Continuum 450.4 nm" />
+                <String fx:value="Blue - H Beta 486.4 nm" />
+            </FXCollections>
+        </items>
+      </ComboBox>
+      <ImageView fx:id="filterselectImageView" fitHeight="197.0" fitWidth="237.0" layoutX="252.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image backgroundLoading="true" url="@/img/alanfriedman_sun_halpha.jpg" />
+         </image>
+      </ImageView>
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
     </children>
 </AnchorPane>
