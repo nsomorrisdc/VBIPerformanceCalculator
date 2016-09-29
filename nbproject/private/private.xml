@@ -3,11 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
+            <file>file:/Users/dmorris/Dropbox/WorkShared/VBIPerformanceCalculator/src/vbiperformancecalculator/infoDSP.java</file>
             <file>file:/Users/dmorris/Dropbox/WorkShared/VBIPerformanceCalculator/src/vbiperformancecalculator/FXMLDocument.fxml</file>
             <file>file:/Users/dmorris/Dropbox/WorkShared/VBIPerformanceCalculator/src/vbiperformancecalculator/FXMLDocumentController.java</file>
             <file>file:/Users/dmorris/Dropbox/WorkShared/VBIPerformanceCalculator/src/vbiperformancecalculator/VBIPerformanceCalculator.java</file>
             <file>file:/Users/dmorris/Dropbox/WorkShared/VBIPerformanceCalculator/src/vbiperformancecalculator/groupInfo.java</file>
             <file>file:/Users/dmorris/Dropbox/WorkShared/VBIPerformanceCalculator/src/vbiperformancecalculator/rootInfo.java</file>
+<<<<<<< HEAD
+=======
+=======
+            <file>file:/Users/dmorris/Dropbox/WorkShared/VBIPerformanceCalculator/src/vbiperformancecalculator/FXMLDocument.fxml</file>
+            <file>file:/Users/dmorris/Dropbox/WorkShared/VBIPerformanceCalculator/src/vbiperformancecalculator/FXMLDocumentController.java</file>
+            <file>file:/Users/dmorris/Dropbox/WorkShared/VBIPerformanceCalculator/src/vbiperformancecalculator/VBIPerformanceCalculator.java</file>
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
         </group>
     </open-files>
 </project-private>

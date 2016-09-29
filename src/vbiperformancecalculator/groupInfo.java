@@ -26,7 +26,11 @@ public class groupInfo {
     @Override
     public String toString() {
         String myString = new String();
+<<<<<<< HEAD
         myString = getGroupName() + ", Cycles x" + getgroupNumCycles();
+=======
+        myString = getGroupName() + ", Cycles: " + getgroupNumCycles();
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
         return myString;
     }
 

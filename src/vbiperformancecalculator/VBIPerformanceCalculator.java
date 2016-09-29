@@ -37,6 +37,11 @@ public class VBIPerformanceCalculator extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
+<<<<<<< HEAD
+=======
+        
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
         
         //Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLDocument.fxml"));
@@ -56,6 +61,16 @@ public class VBIPerformanceCalculator extends Application {
         
         
     }
+<<<<<<< HEAD
+=======
+
+    
+<<<<<<< HEAD
+
+    
+=======
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
     
 
    

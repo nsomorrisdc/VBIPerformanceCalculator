@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <?import javafx.geometry.*?>
+=======
+<<<<<<< HEAD
+<?import javafx.geometry.*?>
+=======
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
 <?import javafx.scene.canvas.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
@@ -12,30 +19,66 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<<<<<<< HEAD
 <AnchorPane id="AnchorPane" fx:id="mainAP" prefHeight="854.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vbiperformancecalculator.FXMLDocumentController">
+=======
+<<<<<<< HEAD
+<AnchorPane id="AnchorPane" prefHeight="854.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vbiperformancecalculator.FXMLDocumentController">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
     <children>
         <Button fx:id="committreeButton" layoutX="471.0" layoutY="292.0" onAction="#handlecommittreeButtonAction" prefHeight="45.0" prefWidth="64.0" text="---&gt;" />
       <TreeView fx:id="redchanneltreeView" layoutX="561.0" layoutY="35.0" prefHeight="279.0" prefWidth="235.0" AnchorPane.leftAnchor="561.0">
         <root>
+<<<<<<< HEAD
             <TreeItem value="Red, Cycles x1" />
         </root>
       </TreeView>
       <Label layoutX="45.0" layoutY="165.0" text="Camera Fields">
+=======
+            <TreeItem value="Red" />
+=======
+<AnchorPane id="AnchorPane" prefHeight="935.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vbiperformancecalculator.FXMLDocumentController">
+    <children>
+        <Button fx:id="committreeButton" layoutX="496.0" layoutY="205.0" onAction="#handlecommittreeButtonAction" text="--&gt;" />
+      <TreeView fx:id="channeltreeView" layoutX="548.0" layoutY="76.0" prefHeight="279.0" prefWidth="137.0">
+        <root>
+            <TreeItem value="Red Channel" />
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+        </root>
+      </TreeView>
+      <Label layoutX="50.0" layoutY="167.0" text="Field Selection">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
           <font>
             <Font name="System Bold" size="13.0" />
           </font>
       </Label>
+<<<<<<< HEAD
       <Label layoutX="79.0" layoutY="95.0" text="Filter">
+=======
+      <Label layoutX="50.0" layoutY="95.0" text="Filter Selection">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Label layoutX="33.0" layoutY="256.0" text="Speckle Correction">
+=======
+      <Label layoutX="34.0" layoutY="257.0" text="Speckle Correction">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
       <font>
             <Font name="System Bold" size="13.0" />
       </font>
       </Label>
+<<<<<<< HEAD
       <MenuBar fx:id="menuBar" prefHeight="29.0" prefWidth="1002.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+=======
+<<<<<<< HEAD
+      <MenuBar prefHeight="29.0" prefWidth="1002.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+=======
+      <MenuBar>
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -62,12 +105,24 @@
           </Menu>
         </menus>
       </MenuBar>
+<<<<<<< HEAD
       <Label layoutX="280.0" layoutY="555.0" text="Synchronization Mode">
+=======
+<<<<<<< HEAD
+      <Label layoutX="310.0" layoutY="564.0" text="Synchronization Mode">
+=======
+      <Label layoutX="266.0" layoutY="479.0" text="Synchronization Mode">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
           <font>
             <Font name="System Bold" size="13.0" />
           </font>
       </Label>
+<<<<<<< HEAD
       <VBox alignment="CENTER_LEFT" layoutX="61.0" layoutY="173.0" prefHeight="82.0" prefWidth="85.0" spacing="10.0">
+=======
+      <VBox alignment="CENTER_LEFT" layoutX="54.0" layoutY="175.0" prefHeight="82.0" prefWidth="85.0" spacing="10.0">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
          <children>
             <RadioButton fx:id="fullfieldRadio" mnemonicParsing="false" onAction="#fieldSelectionAction" selected="true" text="All">
                <toggleGroup>
@@ -77,7 +132,15 @@
             <RadioButton fx:id="centerfieldRadio" mnemonicParsing="false" onAction="#fieldSelectionAction" text="Center" toggleGroup="$groupField" />
          </children>
       </VBox>
+<<<<<<< HEAD
       <VBox layoutX="48.0" layoutY="282.0" prefHeight="136.0" prefWidth="114.0" spacing="10.0">
+=======
+<<<<<<< HEAD
+      <VBox layoutX="49.0" layoutY="283.0" prefHeight="136.0" prefWidth="114.0" spacing="10.0">
+=======
+      <VBox layoutX="49.0" layoutY="283.0" prefHeight="136.0" prefWidth="113.0" spacing="10.0">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
          <children>
             <RadioButton fx:id="onspeckleRadio" mnemonicParsing="false" onAction="#speckleSelectionAction" selected="true" text="On">
                <toggleGroup>
@@ -85,12 +148,17 @@
                </toggleGroup>
             </RadioButton>
             <RadioButton fx:id="offspeckleRadio" mnemonicParsing="false" onAction="#speckleSelectionAction" text="Off" toggleGroup="$groupSpeckle" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
             <TextField fx:id="framesinputField" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="26.0" prefWidth="46.0" />
             <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="132.0" text="Number of frames" />
             <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="122.0" text="[1-10]" textAlignment="CENTER" VBox.vgrow="NEVER">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets></Label>
+<<<<<<< HEAD
          </children>
       </VBox>
       <ComboBox fx:id="filterselectBox" layoutX="26.0" layoutY="120.0" prefHeight="26.0" prefWidth="141.0">
@@ -106,32 +174,111 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="69.0">
                <children>
                   <HBox fx:id="bluechannelTimeline" layoutY="1.0" prefHeight="88.0" AnchorPane.bottomAnchor="-20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0" />
+=======
+         </children>
+      </VBox>
+      <ComboBox fx:id="filterselectBox" layoutX="26.0" layoutY="120.0" prefHeight="26.0" prefWidth="141.0">
+        
+      </ComboBox>
+      <SplitPane dividerPositions="0.5" layoutX="136.0" layoutY="651.0" orientation="VERTICAL" prefHeight="148.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="69.0">
+               <children>
+                  <HBox fx:id="redchannelTimeline" prefHeight="56.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="69.0">
+               <children>
+                  <HBox fx:id="bluechannelTimeline" layoutY="1.0" prefHeight="88.0" AnchorPane.bottomAnchor="-20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0" />
+=======
+            <TextField fx:id="framesinputField" prefHeight="26.0" prefWidth="37.0" />
+            <Label text="Number of Frames" />
+         </children>
+      </VBox>
+      <Button fx:id="combineButton" layoutX="550.0" layoutY="364.0" mnemonicParsing="false" onAction="#combineButtonAction" text="Combine Subgroup" />
+      <ComboBox fx:id="filterselectBox" layoutX="26.0" layoutY="120.0" prefHeight="26.0" prefWidth="141.0">
+        
+      </ComboBox>
+      <SplitPane dividerPositions="0.5" layoutX="70.0" layoutY="558.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="581.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox fx:id="redchannelTimeline" prefHeight="56.0" prefWidth="586.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox fx:id="bluechannelTimeline" layoutY="1.0" prefHeight="88.0" prefWidth="588.0" />
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                </children>
             </AnchorPane>
         </items>
       </SplitPane>
+<<<<<<< HEAD
       <Label layoutX="78.0" layoutY="674.0" text="Red">
+=======
+<<<<<<< HEAD
+      <Label layoutX="78.0" layoutY="674.0" text="Red">
+=======
+      <Label layoutX="21.0" layoutY="582.0" text="Red">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Label layoutX="78.0" layoutY="747.0" text="Blue">
+=======
+<<<<<<< HEAD
+      <Label layoutX="78.0" layoutY="747.0" text="Blue">
+=======
+      <Label layoutX="19.0" layoutY="659.0" text="Blue">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Label layoutX="450.0" layoutY="810.0" text="Cycle Time">
+=======
+<<<<<<< HEAD
+      <Label layoutX="482.0" layoutY="810.0" text="Time">
+=======
+      <Label layoutX="339.0" layoutY="721.0" text="Time">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
       <Pane fx:id="imagePane" layoutX="226.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0">
          <children>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
             <ImageView fx:id="filterselectImageView" fitHeight="200.0" fitWidth="186.0" layoutX="14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
             <Pane fx:id="reticlePane" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </Pane>
+<<<<<<< HEAD
       <HBox layoutX="280.0" layoutY="580.0" prefHeight="23.0" prefWidth="161.0">
+=======
+      <HBox layoutX="287.0" layoutY="599.0" prefHeight="23.0" prefWidth="235.0">
+=======
+            <ImageView fx:id="filterselectImageView" fitHeight="200.0" fitWidth="186.0" layoutX="14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image backgroundLoading="true" url="@/img/alanfriedman_sun_halpha.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <HBox layoutX="226.0" layoutY="505.0" prefHeight="23.0" prefWidth="235.0">
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
          <children>
             <RadioButton fx:id="fixedsynchRadio" mnemonicParsing="false" onAction="#synchronizationSelectionAction" selected="true" text="Fixed      ">
                <toggleGroup>
@@ -139,8 +286,15 @@
                </toggleGroup>
             </RadioButton>
             <RadioButton fx:id="loosesynchRadio" mnemonicParsing="false" onAction="#synchronizationSelectionAction" text="Loose      " toggleGroup="$groupSynch" />
+<<<<<<< HEAD
          </children>
       </HBox>
+=======
+            <RadioButton fx:id="nonesynchRadio" mnemonicParsing="false" onAction="#synchronizationSelectionAction" text="None" toggleGroup="$groupSynch" />
+         </children>
+      </HBox>
+<<<<<<< HEAD
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
       <Pane fx:id="profilePane" layoutX="216.0" layoutY="311.0" prefHeight="188.0" prefWidth="228.0">
          <children>
             <ImageView fx:id="profileImageView" fitHeight="193.0" fitWidth="235.0" layoutX="-3.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
@@ -148,10 +302,17 @@
       </Pane>
       <TreeView fx:id="bluechanneltreeView" layoutX="561.0" layoutY="314.0" prefHeight="273.0" prefWidth="235.0" AnchorPane.leftAnchor="561.0">
       <root>
+<<<<<<< HEAD
             <TreeItem value="Blue, Cycles x1" />
       </root>
       </TreeView>
       <Line endX="200.0" layoutX="350.0" layoutY="538.0" startX="-200.0" />
+=======
+            <TreeItem value="Blue" />
+      </root>
+      </TreeView>
+      <Line endX="100.0" layoutX="380.0" layoutY="547.0" startX="-100.0" />
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
       <Button fx:id="redremoveButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="528.0" layoutY="203.0" mnemonicParsing="false" onAction="#redremoveButtonAction" prefHeight="26.0" prefWidth="27.0" textOverrun="CENTER_ELLIPSIS">
          <font>
             <Font size="12.0" />
@@ -167,6 +328,7 @@
       </Button>
       <Button fx:id="bluecutButton" layoutX="528.0" layoutY="405.0" mnemonicParsing="false" onAction="#bluecutButtonAction" prefHeight="26.0" prefWidth="27.0" />
       <Button fx:id="bluepasteButton" layoutX="528.0" layoutY="431.0" mnemonicParsing="false" onAction="#bluepasteButtonAction" prefHeight="26.0" prefWidth="27.0" />
+<<<<<<< HEAD
       <StackPane fx:id="dspEditorStack" layoutX="816.0" layoutY="35.0" prefHeight="552.0" prefWidth="342.0">
          <children>
             <TitledPane fx:id="dspGroupEditor" animated="false" prefHeight="559.0" prefWidth="342.0" text="dspGroupEditor">
@@ -174,6 +336,15 @@
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <GridPane alignment="CENTER" prefHeight="321.0" prefWidth="200.0">
+=======
+      <StackPane fx:id="dspEditorStack" layoutX="806.0" layoutY="103.0" prefHeight="445.0" prefWidth="202.0">
+         <children>
+            <TitledPane fx:id="dspGroupEditor" animated="false" prefHeight="351.0" prefWidth="202.0" text="dspGroupEditor">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="321.0" prefWidth="200.0">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -195,20 +366,36 @@
                   </AnchorPane>
               </content>
             </TitledPane>
+<<<<<<< HEAD
             <TitledPane fx:id="dspEditor" animated="false" prefHeight="560.0" prefWidth="342.0" text="dspEditor">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <Label fx:id="infoDSPTextBox" alignment="CENTER" contentDisplay="CENTER" text="Label" textAlignment="JUSTIFY" />
+=======
+            <TitledPane fx:id="dspEditor" animated="false" prefHeight="351.0" prefWidth="202.0" text="dspEditor">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="infoDSPTextBox" text="Label" />
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                      </children>
                   </AnchorPane>
               </content>
             </TitledPane>
+<<<<<<< HEAD
             <TitledPane fx:id="dspRootEditor" animated="false" prefHeight="558.0" prefWidth="342.0" text="dspRootEditor">
                <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <GridPane alignment="CENTER" prefHeight="324.0" prefWidth="200.0">
+=======
+            <TitledPane fx:id="dspRootEditor" animated="false" prefHeight="351.0" prefWidth="202.0" text="dspRootEditor">
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="324.0" prefWidth="200.0">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -232,10 +419,17 @@
             </TitledPane>
          </children>
       </StackPane>
+<<<<<<< HEAD
       <GridPane fx:id="redchannelGridPane" layoutX="834.0" layoutY="636.0" prefHeight="90.0" prefWidth="275.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="156.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="94.0" />
+=======
+      <GridPane fx:id="redchannelGridPane" layoutX="859.0" layoutY="641.0" prefHeight="90.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.0" minWidth="10.0" prefWidth="126.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="74.0" />
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -244,25 +438,41 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
+<<<<<<< HEAD
             <Label text="Total Time (s):" GridPane.rowIndex="1">
+=======
+            <Label text="Total Time:" GridPane.rowIndex="1">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
             <Label fx:id="redtotaltimeDisplay" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+<<<<<<< HEAD
             <Label text="Cycle Time (s):">
+=======
+            <Label text="Cycle Time:">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
             <Label fx:id="redcycletimeDisplay" GridPane.columnIndex="1" />
+<<<<<<< HEAD
             <Label text="Peak Data Rate (Gb/s):" GridPane.rowIndex="2">
+=======
+            <Label text="Peak Data Rate:" GridPane.rowIndex="2">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
             <Label fx:id="redpeakdataRate" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+<<<<<<< HEAD
             <Label text="Total Data Volume (GB):" GridPane.rowIndex="3">
+=======
+            <Label text="Total Data Volume:" GridPane.rowIndex="3">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
@@ -270,10 +480,17 @@
             <Label fx:id="redtotaldataVolume" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
+<<<<<<< HEAD
       <GridPane layoutX="834.0" layoutY="726.0" prefHeight="90.0" prefWidth="275.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="154.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="65.0" />
+=======
+      <GridPane layoutX="859.0" layoutY="731.0" prefHeight="90.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="123.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="77.0" />
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -282,25 +499,41 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
+<<<<<<< HEAD
             <Label text="Total Time (s):" GridPane.rowIndex="1">
+=======
+            <Label text="Total Time:" GridPane.rowIndex="1">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
             <Label fx:id="bluetotaltimeDisplay" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+<<<<<<< HEAD
             <Label text="Cycle Time (s):">
+=======
+            <Label text="Cycle Time:">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
             <Label fx:id="bluecycletimeDisplay" GridPane.columnIndex="1" />
+<<<<<<< HEAD
             <Label text="Peak Data Rate (Gb/s):" GridPane.rowIndex="2">
+=======
+            <Label text="Peak Data Rate:" GridPane.rowIndex="2">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
             <Label fx:id="bluepeakdataRate" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+<<<<<<< HEAD
             <Label text="Total Data Volume (GB):" GridPane.rowIndex="3">
+=======
+            <Label text="Total Data Volume:" GridPane.rowIndex="3">
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
@@ -308,7 +541,25 @@
             <Label fx:id="bluetotaldataVolume" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
+<<<<<<< HEAD
       <Line endX="100.0" layoutX="926.0" layoutY="726.0" startX="-100.0" />
       <Line endX="750.0" layoutX="380.0" layoutY="620.0" startX="-325.0" />
+=======
+      <Line endX="100.0" layoutX="956.0" layoutY="731.0" startX="-100.0" />
+=======
+      <Line endX="100.0" layoutX="335.0" layoutY="466.0" startX="-100.0" />
+      <Button fx:id="viewdetailsButton" layoutX="550.0" layoutY="393.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="134.0" text="View Details" />
+      <Pane fx:id="profilePane" layoutX="244.0" layoutY="299.0" prefHeight="156.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="profileImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image backgroundLoading="true" url="@/img/halpha-neckel.jpg" />
+                </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="infoDSPTextBox" layoutX="217.0" layoutY="778.0" prefHeight="111.0" prefWidth="287.0" text="Label" />
+>>>>>>> 014ddb9b01f7ed28757a64e8be1c8f63cbfd5db4
+>>>>>>> f2a9ad672126473ff60011cfee4d05fa26975cae
     </children>
 </AnchorPane>
