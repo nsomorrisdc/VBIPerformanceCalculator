@@ -13,9 +13,12 @@
 package vbiperformancecalculator;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 
@@ -34,9 +37,13 @@ public class VBIPerformanceCalculator extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        //Load FXML, commented out for radiobutton testing
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
+        //Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = (Parent)loader.load();
+        
+        //FXMLDocumentController controller = (FXMLDocumentController)loader.getController();
+        //controller.menufileChooser(stage);
         //Create the Scene
         Scene scene = new Scene(root);
         
@@ -46,8 +53,10 @@ public class VBIPerformanceCalculator extends Application {
         stage.setTitle("VBI Instrument Performance Calculator");
         //Display the stage
         stage.show();
+        
+        
     }
+    
 
-    
-    
+   
 }
